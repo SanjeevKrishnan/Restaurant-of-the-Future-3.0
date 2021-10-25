@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 # Restaurant-of-the-Future-3.0
-Core Team Project
-=======
-# Restaurant of the Future(ROTF) 
+### Core Team Project
 ## Mechanical Stack: AI & Robotics
 <p align="center">
 <img src="https://github.com/vanshgoyal/rotf-mechanical/blob/main/Assets/full_body.PNG" width="400" height="600">
