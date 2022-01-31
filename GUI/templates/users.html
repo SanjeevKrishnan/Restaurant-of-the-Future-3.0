@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .button{
+           margin: 0px 2px;
+           padding: 2px 16px;
+           border-radius: 6px;
+           
+        }
+
+        .button:hover {
+            background-color: rgba(246, 255, 255, 0.925);
+        }
+        th{
+            text-align: center;
+            font-size: 15px;
+        }
+        tr,td{
+            font-size: 20px;
+            margin: 0px px;
+           padding: 2px 15px; 
+        }
+        caption{
+            font-size: large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+
+<table border = "3" width="220" height="120" > 
+    <caption>Not Received</caption>
+    <tr>
+        <th>Order Id</th>
+        <th>Category</th>
+        <th>Name</th>
+    </tr>
+    {% for mars_iot_not_received in userDetails %}
+        <tr>
+            <td> {{mars_iot_not_received[2]}} </td>
+            <td> {{mars_iot_not_received[1]}} </td>
+            <td>
+                <form action="" method="post">
+                    <input type="text" name="nm" value="{{mars_iot_not_received[0]}}"}>
+                    <input type="submit" value="prepared"}>
+                </form>
+            </td>
+        </tr>
+    {% endfor %} 
+</table>
+<br>
+<table border = "3" width="220" height="30" > 
+    <caption>Not Prepared</caption>
+    <tr>
+        <th>Order Id</th>
+        <th>Category</th>
+        <th>Name</th>
+    </tr>
+    {% for mars_iot_not_prepare in userDetails1 %}
+        <tr>
+            <td> {{mars_iot_not_prepare[2]}} </td>
+            <td> {{mars_iot_not_prepare[1]}} </td>
+            <td> {{mars_iot_not_prepare[0]}} </td>
+        </tr>
+    
+    {% endfor %} 
+</table>
