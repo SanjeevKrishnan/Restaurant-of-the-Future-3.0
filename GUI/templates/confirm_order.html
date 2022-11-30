@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .button{
+           margin: 0px 2px;
+           padding: 2px 16px;
+           border-radius: 6px;
+           
+        }
+
+        .button:hover {
+            background-color: rgba(246, 255, 255, 0.925);
+        }
+        th{
+            text-align: center;
+            font-size: 15px;
+        }
+        tr,td{
+            font-size: 20px;
+            margin: 0px 2px;
+           padding: 10px 10px; 
+        }
+        caption{
+            font-size: large;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        text{
+            margin: 10px 2px;
+           padding: 10px 10px; 
+        }
+    </style>
+    <br>
+<table border = "3" width="220" height="30" >
+    <caption>Order Confirmation Details</caption>
+    <tr>
+        <th>Order Id</th>
+        <th>Category</th>
+        <th>Name</th>
+    </tr> 
+    {% for mars_iot_not_received in userDetails %}
+        <form action="#" method="post">
+            <tr>
+                <td><input type="text" name="nm1" value="{{mars_iot_not_received[2]}}"}></td>        
+                <td><input type="text" name="nm2" value="{{mars_iot_not_received[1]}}"}></td>
+                <td><input type="text" name="nm3" value="{{mars_iot_not_received[0]}}"}></td>        
+                <td><input type="submit" value="Confirm this order"}></td>
+            </tr>
+        </form>
+    {% endfor %} 
+</table>
